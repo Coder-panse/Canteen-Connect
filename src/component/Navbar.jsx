@@ -29,8 +29,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="flex gap-8">
-          <IoMdCart style={{ fontSize: "25px" }} />
+        <div className="flex gap-4 sm:gap-8">
+          <Link to='/cart'><IoMdCart style={{ fontSize: "25px" }} /></Link>
           <div>
             <button onClick={() => setIsOpen(!isOpen)}>
         
@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavLink className={({isActive})=>isActive? `text-orange-500`:""} to="/menu" onClick={()=>setIsOpen(!isOpen)}>Menu</NavLink>
           </li>
           <li className="cursor-pointer hover:text-gray-300">
-            <NavLink className={({isActive})=>isActive? `text-orange-500`:""} to="/menu" onClick={()=>setIsOpen(!isOpen)}>Service</NavLink>
+            <NavLink className={({isActive})=>isActive? `text-orange-500`:""} to="/shop" onClick={()=>setIsOpen(!isOpen)}>Service</NavLink>
           </li>
         </ul>
         </div>

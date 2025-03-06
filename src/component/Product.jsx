@@ -1,39 +1,41 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Product = () => {
+  const navigate=useNavigate()
   const item = [
     {
-      img: "./public/sandwich.jpeg",
+      img: "sandwich.jpeg",
       name: "Gyro Sandwhic",
       price: "$15",
       button: "Add to Cart",
     },
     {
-      img: "./public/pic2.jpeg",
+      img: "pic2.jpeg",
       name: "Enchilade",
       price: "$15",
       button: "Add to Cart",
     },
     {
-      img: "./public/pic3.jpeg",
+      img: "pic3.jpeg",
       name: "Green Beans",
       price: "$15",
       button: "Add to Cart",
     },
     {
-      img: "./public/pic4.jpeg",
+      img: "pic4.jpeg",
       name: "Pizza",
       price: "$15",
       button: "Add to Cart",
     },
     {
-      img: "./public/pic5.jpeg",
+      img: "pic5.jpeg",
       name: "Chicken Pot Pie",
       price: "$15",
       button: "Add to Cart",
     },
     {
-      img: "./public/pic6.jpeg",
+      img: "pic6.jpeg",
       name: "Green Salad",
       price: "$15",
       button: "Add to Cart",
@@ -59,7 +61,7 @@ const Product = () => {
             <div className="px-2.5 pt-2.5 pb-5 sm:pb-8">
               <p className="text-lg font-medium mb-2.5">{item.name}</p>
               <div className="flex justify-between">
-                <button className="px-3 py-1 sm:px-5 sm:py-2 bg-orange-400 rounded-full text-white  text-xs sm:text-sm">
+                <button className="px-3 py-1 sm:px-5 sm:py-2 bg-orange-400 rounded-full text-white  text-xs sm:text-sm" onClick={()=>{navigate('/cart'),scrollTo(0,0)}}>
                   {item.button}
                 </button>
                 <p className="text-sm">{item.price}</p>

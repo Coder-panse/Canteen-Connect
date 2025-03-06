@@ -3,44 +3,44 @@ import React from 'react'
 const Menu = () => {
     const item = [
         {
-          img: "./public/sandwich.jpeg",
+          img: "/sandwich.jpeg",
           name: "Gyro Sandwhic",
           price: "$15",
           button: "Add to Cart",
         },
         {
-          img: "./public/pic2.jpeg",
+          img: "/pic2.jpeg",
           name: "Enchilade",
           price: "$15",
           button: "Add to Cart",
         },
         {
-          img: "./public/pic3.jpeg",
+          img: "/pic3.jpeg",
           name: "Green Beans",
           price: "$15",
           button: "Add to Cart",
         },
         {
-          img: "./public/pic4.jpeg",
+          img: "/pic4.jpeg",
           name: "Pizza",
           price: "$15",
           button: "Add to Cart",
         },
         {
-          img: "./public/pic5.jpeg",
+          img: "/pic5.jpeg",
           name: "Chicken Pot Pie",
           price: "$15",
           button: "Add to Cart",
         },
         {
-          img: "./public/pic6.jpeg",
+          img: "/pic6.jpeg",
           name: "Green Salad",
           price: "$15",
           button: "Add to Cart",
         },
       ];
       return (
-        <div className="w-full">
+        <div className="w-full mt-16">
           <div className="w-full text-center">
             <p className="text-md text-orange-400 ">Product</p>
             <h1 className="text-3xl font-semibold">Most Popular Items</h1>
